@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Rezervări Restaurant</title>
+</head>
+<body>
+    <h1>Rezervări la Restaurantul Nostru</h1>
+
+    <form action="#" method="post">
+        <label for="name">Nume complet:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Telefon:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="date">Data rezervării:</label><br>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="time">Ora:</label><br>
+        <input type="time" id="time" name="time" required><br><br>
+
+        <label for="guests">Număr de persoane:</label><br>
+        <select id="guests" name="guests" required>
+            <option value="">Selectează</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6+</option>
+        </select><br><br>
+
+        <button type="submit">Rezervă</button>
+    </form>
+</body>
+</html>
