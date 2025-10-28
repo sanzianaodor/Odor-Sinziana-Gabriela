@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #2e2e2e;
+    background-color: #fbd6c1;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 15px 0;
+}
+
+.logo {
+    font-family: "Playfair Display", serif;
+    font-size: 1.8em;
+    color: #8b4513;
+    margin: 0;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+    color: #8b4513;
+}
+
+.hero {
+    background-image: url('imagini/fundal.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 80px; 
+}
+
+.hero .overlay {
+    background: rgba(0,0,0,0.5);
+    color: white;
+    padding: 60px;
+    border-radius: 12px;
+}
+
+.hero h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 2.8em;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background-color: #8b4513;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #a45c2b;
+}
+
+.about {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #fbd6c1;
+}
+
+.about h2 {
+    font-family: "Playfair Display", serif;
+    color: #8b4513;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+
+.info {
+    background-color: #ffffff;
+    padding: 70px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background-color: #fbd6c1;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-family: "Playfair Display", serif;
+    color: #8b4513;
+    margin-bottom: 10px;
+}
+
+.gallery {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.gallery img {
+    width: 90%;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+footer {
+    background-color: #8b4513;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.95em;
+}
+
+/* Meniu */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.menu-card {
+    background-color: #fffaf5;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.menu-card img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.menu-card h3 {
+    font-family: "Playfair Display", serif;
+    color: #8b4513;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+
+.menu-card p {
+    font-weight: 500;
+    color: #2e2e2e;
+}
+main.menu {
+    padding-top: 100px; 
+}
+
+main.menu h1 {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 2.5em;
+    color: #8b4513;     
+    margin-bottom: 50px;  
+}
+
+main.menu h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.8em;
+    color: #8b4513;    
+    margin-top: 50px; 
+    margin-bottom: 25px; 
+    text-align: center;
+}
+
+/* Rezervari */
+main.reservation {
+    padding-top: 100px; 
+}
+
+.reservation-card {
+    background-color: #fffaf5;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.reservation-card form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #8b4513;
+}
+
+.reservation-card form input,
+.reservation-card form select {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    font-size: 1em;
+    font-family: "Open Sans", sans-serif;
+}
+
+.reservation-card form button {
+    background-color: #8b4513;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.reservation-card form button:hover {
+    background-color: #a45c2b;
+}
+
+main.reservation h1 {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 2.2em;
+    color: #8b4513;
+    margin-bottom: 10px;
+}
+
+/* Despre */
+main.about {
+    padding-top: 100px; 
+    padding-bottom: 50px;
+}
+
+.about-card {
+    background-color: #fffaf5;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.about-card h1 {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 2.2em;
+    color: #8b4513;
+    margin-bottom: 30px;
+}
+
+.about-card p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #2e2e2e;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Contact */
+.contact-page {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.contact-card {
+    background-color: #fffaf5;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.contact-card h1 {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 2.2em;
+    color: #8b4513;
+    margin-bottom: 30px;
+}
+
+.contact-card h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.6em;
+    color: #8b4513;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-card p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1em;
+    color: #2e2e2e;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #8b4513;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    font-size: 1em;
+    font-family: "Open Sans", sans-serif;
+}
+
+.contact-form button {
+    background-color: #8b4513;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #a45c2b;
+}

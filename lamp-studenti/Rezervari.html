@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Rezervări - Casa cu Delicii</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">Casa cu Delicii</h1>
+            <nav>
+                <ul>
+                    <li><a href="Pagina principala.html">Acasă</a></li>
+                    <li><a href="meniu.html">Meniu</a></li>
+                    <li><a href="rezervari.html" class="active">Rezervări</a></li>
+                    <li><a href="despre.html">Despre</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="reservation">
+        <div class="container">
+            <h1>Rezervări la Restaurantul Nostru</h1>
+            <p style="text-align:center; margin-bottom: 40px;">Completează formularul de mai jos pentru a-ți rezerva masa.</p>
+
+            <div class="reservation-card">
+                <form action="#" method="post">
+                    <label for="name">Nume complet:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Telefon:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="date">Data rezervării:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="time">Ora:</label>
+                    <input type="time" id="time" name="time" required>
+
+                    <label for="guests">Număr de persoane:</label>
+                    <select id="guests" name="guests" required>
+                        <option value="">Selectează</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6+</option>
+                    </select>
+
+                    <button type="submit">Rezervă</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Casa cu Delicii — Toate drepturile rezervate</p>
+    </footer>
+
+</body>
+</html>
